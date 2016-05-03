@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.tiendat.myapplication.Player">
+    <SeekBar
+        android:thumb="@drawable/ic_fav_active"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/seekBar"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="143dp"
+        android:indeterminate="false"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:id="@+id/btPlay"
+        android:onClick="Play"
+        android:layout_alignTop="@+id/seekBar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="58dp"
+        android:src="@drawable/ic_player_play" />
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="70dp"
+        android:id="@+id/btNxt"
+        android:src="@drawable/ic_player_next"
+        android:layout_alignTop="@+id/btPlay"
+        android:layout_toRightOf="@+id/btPlay"
+        android:layout_toEndOf="@+id/btPlay"
+        android:layout_alignBottom="@+id/btPlay"
+        android:onClick="Forward" />
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="70dp"
+        android:id="@+id/btPv"
+        android:src="@drawable/ic_player_prev"
+        android:layout_alignTop="@+id/btPlay"
+        android:layout_toLeftOf="@+id/btPlay"
+        android:layout_toStartOf="@+id/btPlay"
+        android:layout_alignBottom="@+id/btPlay"
+        android:onClick="Back" />
+
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/btRepeat"
+        android:src="@drawable/ic_player_repeat_all"
+        android:layout_alignTop="@+id/btNxt"
+        android:layout_toRightOf="@+id/btNxt"
+        android:layout_toEndOf="@+id/btNxt"
+        android:layout_alignBottom="@+id/btNxt" />
+
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/btShuffle"
+        android:src="@drawable/ic_player_shuffle"
+        android:layout_alignTop="@+id/btPv"
+        android:layout_toLeftOf="@+id/btPv"
+        android:layout_toStartOf="@+id/btPv"
+        android:layout_alignBottom="@+id/btPv" />
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:id="@+id/imageViewlaucher"
+        android:src="@drawable/default_cover_big"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="21dp" />
+
+    <ImageView
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:id="@+id/imageView7"
+        android:layout_marginBottom="73dp"
+        android:src="@drawable/ic_cd_center"
+        android:layout_alignBottom="@+id/imageViewlaucher"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
